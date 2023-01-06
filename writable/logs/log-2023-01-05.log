@@ -1,0 +1,640 @@
+ERROR - 2023-01-05 23:18:47 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pos' in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pos', 3306, '', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\pos\app\Controllers\Usuarios.php(193): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pos' in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\pos\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\pos\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 D:\xampp\htdocs\pos\app\Controllers\Usuarios.php(193): CodeIgniter\BaseModel->first()
+#6 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 23:18:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pos'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Usuarios.php(193): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:21:00 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pos' in D:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pos', 3306, '', 0)
+#1 D:\xampp\htdocs\posn\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\posn\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\posn\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\posn\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\posn\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\posn\app\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\posn\system\CodeIgniter.php(927): App\Controllers\Unidades->index()
+#8 D:\xampp\htdocs\posn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+#9 D:\xampp\htdocs\posn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\posn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pos' in D:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\posn\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\posn\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\posn\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\posn\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\posn\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\posn\app\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\posn\system\CodeIgniter.php(927): App\Controllers\Unidades->index()
+#7 D:\xampp\htdocs\posn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+#8 D:\xampp\htdocs\posn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\posn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 23:21:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pos'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `unidades`
+WHERE `activo` = :activo:', [...], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:22:09 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pos' in D:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pos', 3306, '', 0)
+#1 D:\xampp\htdocs\posn\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\posn\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\posn\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\posn\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\posn\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\posn\app\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\posn\system\CodeIgniter.php(927): App\Controllers\Unidades->index()
+#8 D:\xampp\htdocs\posn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+#9 D:\xampp\htdocs\posn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\posn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pos' in D:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\posn\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\posn\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\posn\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\posn\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\posn\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\posn\app\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\posn\system\CodeIgniter.php(927): App\Controllers\Unidades->index()
+#7 D:\xampp\htdocs\posn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+#8 D:\xampp\htdocs\posn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\posn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 23:22:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pos'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `unidades`
+WHERE `activo` = :activo:', [...], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:23:50 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pos' in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pos', 3306, '', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\pos\app\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Unidades->index()
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pos' in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\pos\app\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Unidades->index()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 23:23:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pos'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `unidades`
+WHERE `activo` = :activo:', [...], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:25:36 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pos' in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pos', 3306, '', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\pos\app\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Unidades->index()
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pos' in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\pos\app\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Unidades->index()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 23:25:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pos'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `unidades`
+WHERE `activo` = :activo:', [...], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Unidades.php(33): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Unidades->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Unidades))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:26:43 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'pos' in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pos', 3306, '', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\pos\app\Controllers\Productos.php(38): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Productos->index()
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'pos' in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\xampp\htdocs\pos\app\Controllers\Productos.php(38): CodeIgniter\BaseModel->findAll()
+#6 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Productos->index()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 23:26:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'pos'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `productos`
+WHERE `activo` = :activo:', [...], false)
+ 3 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Productos.php(38): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:28:39 --> mysqli_sql_exception: Table 'poss.usuarios' doesn't exist in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\pos\app\Controllers\Usuarios.php(193): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-05 23:28:39 --> Table 'poss.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'xdxd\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'xdxd\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `usuario` = \'xdxd\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `usuario` = :usuario:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Usuarios.php(193): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->valida()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:30:07 --> mysqli_sql_exception: Table 'poss.compras' doesn't exist in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\pos\app\Controllers\Compras.php(26): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Compras->index()
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-05 23:30:07 --> Table 'poss.compras' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `compras`
+WHERE `activo` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `compras`
+WHERE `activo` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `compras`
+WHERE `activo` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `compras`
+WHERE `activo` = :activo:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Compras.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:30:10 --> mysqli_sql_exception: Table 'poss.compras' doesn't exist in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\pos\app\Controllers\Compras.php(26): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Compras->index()
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-05 23:30:10 --> Table 'poss.compras' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `compras`
+WHERE `activo` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `compras`
+WHERE `activo` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `compras`
+WHERE `activo` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `compras`
+WHERE `activo` = :activo:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Compras.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:30:17 --> mysqli_sql_exception: Table 'poss.ventas' doesn't exist in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ventas`...', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\pos\app\Models\VentasModel.php(46): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\pos\app\Controllers\Ventas.php(26): App\Models\VentasModel->obtener(1)
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Ventas->index()
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-05 23:30:17 --> Table 'poss.ventas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fecha_alta` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fecha_alta` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fecha_alta` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = :ventas.activo:
+ORDER BY `ventas`.`fecha_alta` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(46): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(26): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:32:46 --> mysqli_sql_exception: Table 'poss.configuracion' doesn't exist in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\pos\app\Controllers\Configuracion.php(33): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Configuracion->index()
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Configuracion))
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-05 23:32:46 --> Table 'poss.configuracion' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `configuracion`
+WHERE `nombre` = \'tienda_nombre\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `configuracion`
+WHERE `nombre` = \'tienda_nombre\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `configuracion`
+WHERE `nombre` = \'tienda_nombre\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `configuracion`
+WHERE `nombre` = :nombre:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Configuracion.php(33): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Configuracion->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Configuracion))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:32:49 --> mysqli_sql_exception: Table 'poss.usuarios' doesn't exist in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\pos\app\Controllers\Usuarios.php(93): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Usuarios->index()
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-05 23:32:49 --> Table 'poss.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `activo` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `activo` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `activo` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `activo` = :activo:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Usuarios.php(93): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 23:39:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\configuracion\configuracion.php on line 17.
+ 1 APPPATH\Views\configuracion\configuracion.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\configuracion\\configuracion.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\configuracion\\configuracion.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('configuracion/configuracion', [], true)
+ 5 APPPATH\Controllers\Configuracion.php(42): view('configuracion/configuracion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Configuracion->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Configuracion))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 23:39:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\configuracion\configuracion.php on line 17.
+ 1 APPPATH\Views\configuracion\configuracion.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\configuracion\\configuracion.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\configuracion\\configuracion.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('configuracion/configuracion', [], true)
+ 5 APPPATH\Controllers\Configuracion.php(42): view('configuracion/configuracion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Configuracion->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Configuracion))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:49:33 --> mysqli_sql_exception: Table 'poss.usuarios' doesn't exist in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\pos\app\Controllers\Usuarios.php(93): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Usuarios->index()
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-01-05 23:49:33 --> Table 'poss.usuarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `usuarios`
+WHERE `activo` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios`
+WHERE `activo` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios`
+WHERE `activo` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `activo` = :activo:', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Usuarios.php(93): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:52:23 --> mysqli_sql_exception: Table 'poss.ventas' doesn't exist in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ventas`...', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\pos\app\Models\VentasModel.php(46): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\pos\app\Controllers\Ventas.php(26): App\Models\VentasModel->obtener(1)
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Ventas->index()
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-05 23:52:23 --> Table 'poss.ventas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fecha_alta` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fecha_alta` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fecha_alta` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = :ventas.activo:
+ORDER BY `ventas`.`fecha_alta` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(46): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(26): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 23:54:14 --> mysqli_sql_exception: Table 'poss.ventas' doesn't exist in D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 D:\xampp\htdocs\pos\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ventas`...', 0)
+#1 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`...')
+#2 D:\xampp\htdocs\pos\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`...')
+#3 D:\xampp\htdocs\pos\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`...', Array, false)
+#4 D:\xampp\htdocs\pos\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\pos\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\pos\app\Models\VentasModel.php(46): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\pos\app\Controllers\Ventas.php(26): App\Models\VentasModel->obtener(1)
+#8 D:\xampp\htdocs\pos\system\CodeIgniter.php(927): App\Controllers\Ventas->index()
+#9 D:\xampp\htdocs\pos\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 D:\xampp\htdocs\pos\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\pos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-01-05 23:54:14 --> Table 'poss.ventas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fecha_alta` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fecha_alta` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = 1
+ORDER BY `ventas`.`fecha_alta` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `ventas`.*, `u`.`usuario` AS `cajero`, `c`.`nombre` AS `cliente`
+FROM `ventas`
+JOIN `usuarios` AS `u` ON `ventas`.`id_usuario` = `u`.`id`
+JOIN `clientes` AS `c` ON `ventas`.`id_cliente` = `c`.`id`
+WHERE `ventas`.`activo` = :ventas.activo:
+ORDER BY `ventas`.`fecha_alta` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\VentasModel.php(46): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Ventas.php(26): App\Models\VentasModel->obtener(1)
+ 9 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->index()
+10 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

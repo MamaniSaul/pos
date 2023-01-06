@@ -1,0 +1,149 @@
+CRITICAL - 2022-12-26 06:54:58 --> Too few arguments to function App\Models\TemporalCompraModel::actualizarProductoCompra(), 3 passed in C:\xampp\htdocs\posn\app\Controllers\TemporalCompra.php on line 30 and exactly 4 expected
+in APPPATH\Models\TemporalCompraModel.php on line 42.
+ 1 APPPATH\Controllers\TemporalCompra.php(30): App\Models\TemporalCompraModel->actualizarProductoCompra('17', 2, 24.16)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\TemporalCompra->inserta('17', 2, '63a997e167220')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TemporalCompra))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:55:03 --> Too few arguments to function App\Models\TemporalCompraModel::actualizarProductoCompra(), 3 passed in C:\xampp\htdocs\posn\app\Controllers\TemporalCompra.php on line 30 and exactly 4 expected
+in APPPATH\Models\TemporalCompraModel.php on line 42.
+ 1 APPPATH\Controllers\TemporalCompra.php(30): App\Models\TemporalCompraModel->actualizarProductoCompra('17', 2, 24.16)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\TemporalCompra->inserta('17', 2, '63a997e167220')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TemporalCompra))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:55:06 --> Too few arguments to function App\Models\TemporalCompraModel::actualizarProductoCompra(), 3 passed in C:\xampp\htdocs\posn\app\Controllers\TemporalCompra.php on line 30 and exactly 4 expected
+in APPPATH\Models\TemporalCompraModel.php on line 42.
+ 1 APPPATH\Controllers\TemporalCompra.php(30): App\Models\TemporalCompraModel->actualizarProductoCompra('17', 2, 24.16)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\TemporalCompra->inserta('17', 2, '63a997e167220')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TemporalCompra))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 06:55:06 --> Too few arguments to function App\Models\TemporalCompraModel::actualizarProductoCompra(), 3 passed in C:\xampp\htdocs\posn\app\Controllers\TemporalCompra.php on line 30 and exactly 4 expected
+in APPPATH\Models\TemporalCompraModel.php on line 42.
+ 1 APPPATH\Controllers\TemporalCompra.php(30): App\Models\TemporalCompraModel->actualizarProductoCompra('17', 2, 24.16)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\TemporalCompra->inserta('17', 2, '63a997e167220')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TemporalCompra))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:31:28 --> Undefined property: App\Controllers\Compras::$unidades
+in APPPATH\Controllers\Compras.php on line 20.
+ 1 APPPATH\Controllers\Compras.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Compras::$unidades', 'APPPATH\\Controllers\\Compras.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 07:34:57 --> Undefined property: App\Controllers\Compras::$unidades
+in APPPATH\Controllers\Compras.php on line 20.
+ 1 APPPATH\Controllers\Compras.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Compras::$unidades', 'APPPATH\\Controllers\\Compras.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:33:33 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Controllers\Compras.php on line 43.
+ 1 APPPATH\Controllers\Compras.php(43): number_format('2.416.00', 2, 'ROOTPATH\\public', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-26 09:35:07 --> number_format(): Argument #1 ($num) must be of type float, string given
+in APPPATH\Controllers\Compras.php on line 43.
+ 1 APPPATH\Controllers\Compras.php(43): number_format('2.416.00', 2, 'ROOTPATH\\public', 'ROOTPATH\\public')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->guarda()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-26 09:59:17 --> mysqli_sql_exception: Column 'folio' cannot be null in C:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\posn\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\posn\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\posn\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\posn\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posn\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posn\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posn\app\Models\ComprasModel.php(30): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posn\app\Controllers\Compras.php(49): App\Models\ComprasModel->insertaCompra(NULL, '12.080.00', '4')
+#9 C:\xampp\htdocs\posn\system\CodeIgniter.php(927): App\Controllers\Compras->guarda()
+#10 C:\xampp\htdocs\posn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp\htdocs\posn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\posn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-26 09:59:17 --> Column 'folio' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (NULL, \'12.080.00\', \'4\', \'2022-12-26 09:59:16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (NULL, \'12.080.00\', \'4\', \'2022-12-26 09:59:16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (NULL, \'12.080.00\', \'4\', \'2022-12-26 09:59:16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (:folio:, :total:, :id_usuario:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(30): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(49): App\Models\ComprasModel->insertaCompra(null, '12.080.00', '4')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-26 10:00:20 --> mysqli_sql_exception: Column 'folio' cannot be null in C:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\posn\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\posn\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\posn\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\posn\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posn\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posn\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posn\app\Models\ComprasModel.php(30): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posn\app\Controllers\Compras.php(49): App\Models\ComprasModel->insertaCompra(NULL, '120.80', '4')
+#9 C:\xampp\htdocs\posn\system\CodeIgniter.php(927): App\Controllers\Compras->guarda()
+#10 C:\xampp\htdocs\posn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp\htdocs\posn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\posn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-26 10:00:20 --> Column 'folio' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (NULL, \'120.80\', \'4\', \'2022-12-26 10:00:20\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (NULL, \'120.80\', \'4\', \'2022-12-26 10:00:20\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (NULL, \'120.80\', \'4\', \'2022-12-26 10:00:20\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (:folio:, :total:, :id_usuario:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(30): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(49): App\Models\ComprasModel->insertaCompra(null, '120.80', '4')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-26 10:01:18 --> mysqli_sql_exception: Column 'folio' cannot be null in C:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `co...', 0)
+#1 C:\xampp\htdocs\posn\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `co...')
+#2 C:\xampp\htdocs\posn\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `co...')
+#3 C:\xampp\htdocs\posn\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 C:\xampp\htdocs\posn\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posn\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posn\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posn\app\Models\ComprasModel.php(30): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posn\app\Controllers\Compras.php(49): App\Models\ComprasModel->insertaCompra(NULL, '120.80', '4')
+#9 C:\xampp\htdocs\posn\system\CodeIgniter.php(927): App\Controllers\Compras->guarda()
+#10 C:\xampp\htdocs\posn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+#11 C:\xampp\htdocs\posn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\posn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-26 10:01:18 --> Column 'folio' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (NULL, \'120.80\', \'4\', \'2022-12-26 10:01:18\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (NULL, \'120.80\', \'4\', \'2022-12-26 10:01:18\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (NULL, \'120.80\', \'4\', \'2022-12-26 10:01:18\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `compras` (`folio`, `total`, `id_usuario`, `fecha_alta`) VALUES (:folio:, :total:, :id_usuario:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\ComprasModel.php(30): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Compras.php(49): App\Models\ComprasModel->insertaCompra(null, '120.80', '4')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->guarda()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

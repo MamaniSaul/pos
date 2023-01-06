@@ -1,0 +1,75 @@
+CRITICAL - 2022-12-30 08:55:53 --> Array and string offset access syntax with curly braces is no longer supported
+in APPPATH\Controllers\Ventas.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-30 08:56:03 --> Array and string offset access syntax with curly braces is no longer supported
+in APPPATH\Controllers\Ventas.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-30 08:56:05 --> Array and string offset access syntax with curly braces is no longer supported
+in APPPATH\Controllers\Ventas.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-30 08:56:09 --> Array and string offset access syntax with curly braces is no longer supported
+in APPPATH\Controllers\Ventas.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-30 08:56:41 --> Array and string offset access syntax with curly braces is no longer supported
+in APPPATH\Controllers\Ventas.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-30 08:56:44 --> Array and string offset access syntax with curly braces is no longer supported
+in APPPATH\Controllers\Ventas.php on line 153.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-12-30 11:52:19 --> Undefined variable $producto
+in APPPATH\Views\productos\productos.php on line 35.
+ 1 APPPATH\Views\productos\productos.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $producto', 'APPPATH\\Views\\productos\\productos.php', 35)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\productos\\productos.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('productos/productos', [], true)
+ 5 APPPATH\Controllers\Productos.php(42): view('productos/productos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 12:14:10 --> syntax error, unexpected token "++"
+in APPPATH\Controllers\Productos.php on line 86.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('productos/nuevo')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('productos/nuevo')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('productos/nuevo')
+ 4 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 12:14:57 --> Could not move file php5027.tmp to ./images/productos/ ()
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 149.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php5027.tmp', 'FCPATH\\images\\productos', 'ROOTPATH\\public')
+ 2 APPPATH\Controllers\Productos.php(83): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\images\\productos', '20/foto_1.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->insertar()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 12:45:45 --> fopen(http://localhost/posn/public/images/logoti.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1256.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/posn/public/images/logoti.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1256)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1256): fopen('http://localhost/posn/public/images/logoti.png', 'rb')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsepng('http://localhost/posn/public/images/logoti.png')
+ 4 APPPATH\Controllers\Ventas.php(114): FPDF->Image('http://localhost/posn/public/images/logoti.png', 5, 0, 20, 20, 'png')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->generaTicket('10')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 13:55:43 --> Undefined variable $img
+in APPPATH\Controllers\Configuracion.php on line 69.
+ 1 APPPATH\Controllers\Configuracion.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $img', 'APPPATH\\Controllers\\Configuracion.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Configuracion->actualizar()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Configuracion))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-30 21:39:24 --> Attempt to read property "total" on array
+in APPPATH\Views\inicio.php on line 24.
+ 1 APPPATH\Views\inicio.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "total" on array', 'APPPATH\\Views\\inicio.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\inicio.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('inicio', [], true)
+ 5 APPPATH\Controllers\Inicio.php(21): view('inicio', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Inicio->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inicio))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

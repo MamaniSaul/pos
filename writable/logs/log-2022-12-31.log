@@ -1,0 +1,72 @@
+CRITICAL - 2022-12-31 04:38:24 --> fopen(http://localhost/posn/public/images/logo.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH\ThirdParty\fpdf\fpdf.php on line 1256.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(http://localhost/posn/public/images/logo.png): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH\\ThirdParty\\fpdf\\fpdf.php', 1256)
+ 2 APPPATH\ThirdParty\fpdf\fpdf.php(1256): fopen('http://localhost/posn/public/images/logo.png', 'rb')
+ 3 APPPATH\ThirdParty\fpdf\fpdf.php(885): FPDF->_parsepng('http://localhost/posn/public/images/logo.png')
+ 4 APPPATH\Controllers\Compras.php(111): FPDF->Image('http://localhost/posn/public/images/logo.png', 185, 10, 20, 20, 'png')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Compras->generaCompraPdf('41')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Compras))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 05:00:22 --> Call to undefined function imagecreate()
+in APPPATH\Libraries\barcode.php on line 113.
+ 1 APPPATH\Controllers\Productos.php(212): barcode_genera->barcode('1234567890.png', '1234567890', 20, 'horizontal', 'code39', true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->generaBarras()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 05:04:18 --> Call to undefined function imagecreate()
+in APPPATH\Libraries\barcode.php on line 113.
+ 1 APPPATH\Controllers\Productos.php(212): barcode_genera->barcode('1234567890.png', '1234567890', 20, 'horizontal', 'code39', true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->generaBarras()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 05:06:28 --> Call to undefined function imagecreate()
+in APPPATH\Libraries\barcode.php on line 113.
+ 1 APPPATH\Controllers\Productos.php(212): barcode_genera->barcode('1234567890.png', '1234567890', 20, 'horizontal', 'code39', true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->generaBarras()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 05:06:34 --> Call to undefined function imagecreate()
+in APPPATH\Libraries\barcode.php on line 113.
+ 1 APPPATH\Controllers\Productos.php(212): barcode_genera->barcode('1234567890.png', '1234567890', 20, 'horizontal', 'code39', true)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Productos->generaBarras()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 07:23:30 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\Productos.php on line 261.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('productos/mostrarMinimos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('productos/mostrarMinimos')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('productos/mostrarMinimos')
+ 4 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 07:23:48 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\Productos.php on line 261.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('productos/muestraCodigos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('productos/muestraCodigos')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('productos/muestraCodigos')
+ 4 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 07:23:51 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\Productos.php on line 261.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('productos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('productos')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('productos')
+ 4 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-31 07:24:23 --> syntax error, unexpected variable "$this"
+in APPPATH\Controllers\Productos.php on line 261.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('productos/mostrarMinimos')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('productos/mostrarMinimos')
+ 3 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\Router->handle('productos/mostrarMinimos')
+ 4 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

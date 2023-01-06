@@ -1,0 +1,92 @@
+CRITICAL - 2022-12-28 08:15:59 --> Invalid file: ventas/caja.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ventas/caja.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('ventas/caja', [], true)
+ 3 APPPATH\Controllers\Ventas.php(35): view('ventas/caja')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->venta()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 12:57:20 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\Ventas.php', 44)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\Ventas.php', 44)
+ 3 APPPATH\Controllers\Ventas.php(44): preg_replace('/[\\$,]/', 'ROOTPATH\\public', null)
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 13:13:57 --> Undefined constant "CodeIgniter\Debug\VENDORPATH"
+in SYSTEMPATH\Debug\Exceptions.php on line 177.
+ 1 SYSTEMPATH\Debug\Exceptions.php(157): CodeIgniter\Debug\Exceptions->isFakerDeprecationError(8192, 'preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\Ventas.php', 44)
+ 2 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'APPPATH\\Controllers\\Ventas.php', 44)
+ 3 APPPATH\Controllers\Ventas.php(44): preg_replace('/[\\$,]/', 'ROOTPATH\\public', null)
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 13:58:12 --> Undefined variable $id_compra
+in APPPATH\Models\VentasModel.php on line 28.
+ 1 APPPATH\Models\VentasModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_compra', 'APPPATH\\Models\\VentasModel.php', 28)
+ 2 APPPATH\Controllers\Ventas.php(51): App\Models\VentasModel->insertaVenta('63ac9fcdf28f1 ', '1234.56', '4', '1', '1', '001')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 14:01:48 --> Undefined variable $id_compra
+in APPPATH\Models\VentasModel.php on line 28.
+ 1 APPPATH\Models\VentasModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_compra', 'APPPATH\\Models\\VentasModel.php', 28)
+ 2 APPPATH\Controllers\Ventas.php(51): App\Models\VentasModel->insertaVenta('63ac9fcdf28f1 ', '1234.56', '4', '1', '1', '001')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 15:08:30 --> Undefined property: App\Controllers\Ventas::$compras
+in APPPATH\Controllers\Ventas.php on line 23.
+ 1 APPPATH\Controllers\Ventas.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ventas::$compras', 'APPPATH\\Controllers\\Ventas.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-28 17:34:21 --> mysqli_sql_exception: Column 'id_usuario' cannot be null in C:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\posn\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\posn\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\posn\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\posn\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\posn\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\posn\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\posn\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\posn\app\Models\VentasModel.php(33): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\posn\app\Controllers\Ventas.php(53): App\Models\VentasModel->insertaVenta('63acd2798be86 ', '1234.56', NULL, NULL, '1', '001')
+#9 C:\xampp\htdocs\posn\system\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+#10 C:\xampp\htdocs\posn\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#11 C:\xampp\htdocs\posn\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\posn\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-12-28 17:34:21 --> Column 'id_usuario' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (\'63acd2798be86 \', \'1234.56\', NULL, NULL, \'1\', \'001\', \'2022-12-28 17:34:21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (\'63acd2798be86 \', \'1234.56\', NULL, NULL, \'1\', \'001\', \'2022-12-28 17:34:21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (\'63acd2798be86 \', \'1234.56\', NULL, NULL, \'1\', \'001\', \'2022-12-28 17:34:21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`folio`, `total`, `id_usuario`, `id_caja`, `id_cliente`, `forma_pago`, `fecha_alta`) VALUES (:folio:, :total:, :id_usuario:, :id_caja:, :id_cliente:, :forma_pago:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\VentasModel.php(33): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Ventas.php(53): App\Models\VentasModel->insertaVenta('63acd2798be86 ', '1234.56', null, null, '1', '001')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ventas->guarda()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-28 17:34:47 --> Trying to access array offset on value of type null
+in APPPATH\Views\usuarios\cambia_password.php on line 20.
+ 1 APPPATH\Views\usuarios\cambia_password.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\usuarios\\cambia_password.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\cambia_password.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('usuarios/cambia_password', [], true)
+ 5 APPPATH\Controllers\Usuarios.php(231): view('usuarios/cambia_password', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Usuarios->cambia_password()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
